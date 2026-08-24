@@ -19,7 +19,7 @@ jobs:
         uses: readme-tools/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e #v2.0.2
         with:
           card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true
+          options: username=${{ github.repository_owner }}&show_icons=true&hide_title=true
           path: cards/stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           fail_on_error: "true"
