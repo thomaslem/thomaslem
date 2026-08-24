@@ -21,7 +21,8 @@ jobs:
           card: stats
           options: username=${{ github.repository_owner }}&show_icons=true&hide_title=true
           path: cards/stats.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.STATS_TOKEN }}
+          core_version: "2.1.5"
           fail_on_error: "true"
 
       - name: Commit cards
